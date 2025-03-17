@@ -1,0 +1,195 @@
+1. Why is it important for a database designer to understand process modeling?
+    A. Process design is a primary responsibility of the DBA.
+    B. The process model must be completed before the data model.
+    C. The data model must be completed before the process model.
+    D. The database designer must work closely with the process designer.
+    E. The database design must support the intended process model.
+    Answer: D,E
+2. Peter Chen’s ERD format represents “many” with ____________.
+    Answer: the symbol M placed near the end of the relationship line
+3. The diamond in Chen’s ERD format represents a(n) ____________.
+    Answer: relationship
+4. The relational ERD format represents “many” with ____________. 
+    Answer: a crow’s foot
+5. The IDEF1X ERD format
+    A. Was first released in 1983
+    B. Follows a standard developed by the National Institute of Standards and Technology
+    C. Has many variants
+    D. Has been adopted as a standard by many U.S. government agencies
+    E. Covers both data and process models
+    Answer: B,D
+6. The IDEF1X ERD format shows
+    A. Identifying relationships with a solid line
+    B. Minimal cardinality using a combination of small circles and vertical lines shown on the relationship line
+    C. Maximum cardinality using a combination of small vertical lines and crow’s feet drawn on the relationship line
+    D. Dependent entities with squared corners on the rectangle
+    E. Independent entities with rounded corners on the rectangle
+    Answer: A
+7. A subtype
+    A. Is a subset of the super type
+    B. Has a one-to-many relationship with the super type
+    C. Has a conditional one-to-one relationship with the super type
+    D. Shows various states of the super type
+    E. Is a superset of the super type
+    Answer: A,C
+8. Examples of possible subtypes for an Order entity super type include
+    A. Order line items
+    B. Shipped order, unshipped order, invoiced order 
+    C. Office supplies order, professional services order
+    D. Approved order, pending order, canceled order
+    E. Auto parts order, aircraft parts order, truck parts order
+    Answer: C,E
+9. In IE notation, subtypes
+    A. May be shown with a type discriminator attribute name
+    B. May be connected to the super type via a symbol composed of a circle with a line under it
+    C. Have the primary key of the subtype shown as a foreign key in the super type
+    D. Usually have the same primary key as the super type
+    E. May be shown using a crow’s foot
+    Answer: A,B,D
+10. When subtypes are being considered in a database design, a tradeoff exists between __________ and ____________.
+    Answer: generalization,specialization
+11. In a flowchart, process steps are shown as ________ and decision points are shown as ________. 
+    Answer: rectangles, diamonds
+12. The strengths of flowcharts are
+    A. They are natural and easy to use for procedural language programmers. 
+    B. They are useful for spotting reusable components.
+    C. They are specific to application programming only.
+    D. They are equally useful for nonprocedural and object-oriented languages. 
+    E. They can be easily modified as requirements change.
+    Answer: A,B,E
+13. The basic components of a function hierarchy diagram are
+    A. Ellipses to show attributes
+    B. Rectangles to show process functions
+    C. Lines connecting the processes in order of execution
+    D. A hierarchy to show which functions are subordinate to others 
+    E. Diamonds to show decision points
+    Answer: B,D
+14. The strengths of the function hierarchy diagram are
+    A. Checking quality is easy and straightforward.
+    B. Complex interactions between functions are easily modeled.
+    C. It is quick and easy to learn and use.
+    D. It clearly shows the sequence of process steps.
+    E. It provides a good overview at high and medium levels of detail.
+    Answer: C,E
+15. The basic components of a swim lane diagram are
+    A. Lines with arrows to show the sequence of process steps
+    B. Diamonds to show decision points
+    C. Vertical lanes to show the organization units that carry out process steps 
+    D. Ellipses to show process steps
+    E. Open-ended rectangles to show data stores
+   Answer: A,C,D
+16. The data flow diagram (DFD)
+    A. Is the most data-centric of all process models
+    B. Was first developed in the 1980s
+    C. Combines diagram pages together hierarchically
+    D. Was first developed by E.F. Codd
+    E. Combines the best of the flowchart and the function diagram
+    Answer: A,C,E
+17. In a DFD, data stores are shown as ____________ and processes are shown as ____________.
+    Answer: open-ended rectangles, rounded rectangles
+18. The strengths of the DFD are
+    A. It’s good for top-down design work.
+    B. It’s quick and easy to develop, even for complex systems. 
+    C. It shows overall structure without sacrificing detail.
+    D. It shows complex logic easily.
+    E. It’s great for presentation to management.
+    Answer: A,C,E
+19. The components of the CRUD matrix are
+    A. Ellipses to show attributes
+    B. Major processes shown on one axis
+    C. Major entities shown on the other axis
+    D. Reference numbers to show the hierarchy of processes
+    E. Letters to show the operations that processes carry out on entities
+    Answer: A,B,C,E
+20. The CRUD matrix helps find the following problems:
+    A. Entities that are never read
+    B. Processes that are never deleted
+    C. Processes that only read
+    D. Entities that are never updated
+    E. Processes that have no create entity
+    Answer: A,C,D
+21. Business rules are implemented in the database using ____________.
+    Answer: constraints
+22. Two key differences between unique constraints and primary key constraints are ____________ and ____________.
+    Answer: a table may have only one primary key constraint,columns referenced in primary key constraints must be defined as NOT NULL
+23. Relationships in the logical model become ____________ in the physical model.
+    Answer: referential constraints
+24. Constraint names are important because ____________.
+    Answer: they appear in error messages
+25. When you’re designing tables:
+    A. Each normalized relation becomes a table.
+    B. Each attribute in the relation becomes a table column.
+    C. Relationships become check constraints.
+    D. Unique identifiers become triggers.
+    E. Primary key columns must be defined as NOT NULL.
+    Answer: A,B,E
+26. Super types and subtypes
+    A. Must be implemented exactly as specified in the logical design
+    B. May be collapsed in the physical database design
+    C. May have the super type columns folded into each subtype in the physical design
+    D. Usually have the same primary key in the physical tables
+    E. Apply only to the logical design
+    Answer: B,C,D
+27. Table names
+    A. Should be based on the attribute names in the logical design
+    B. Should always include the word “table”
+    C. Should use only uppercase letters
+    D. Should include organization or location names
+    E. May contain abbreviations when necessary 
+    Answer: C,E
+28. Column names
+    A. Must be unique within the database
+    B. Should be based on the corresponding attribute names in the logical design
+    C. Must be prefixed with the table name
+    D. Must be unique within the table
+    E. Should use abbreviations whenever possible
+    Answer: B,D
+29. Referential constraints
+    A. Define relationships identified in the logical model
+    B. Are always defined on the parent table
+    C. Require that foreign keys be defined as NOT NULL
+    D. Should have descriptive names
+    E. Name the parent and child tables and the foreign key column
+    Answer: A,D
+30. Check constraints
+    A. May be used to force a column to match a list of values
+    B. May be used to force a column to match a range of values
+    C. May be used to force a column to match another column in the same row 
+    D. May be used to force a column to match a column in another table
+    E. May be used to enforce a foreign key constraint
+    Answer: A,B,C
+31. Data types
+    A. Prevent incorrect data from being inserted into a table
+    B. Can be used to prevent alphabetic characters from being stored in numeric columns
+    C. Can be used to prevent numeric characters from being stored in character format columns
+    D. Require that precision and scale be specified also
+    E. Can be used to prevent invalid dates from being stored in date columns
+    Answer: B,E
+32. View restrictions include which of the following?
+    A. Views containing joins can never be updated.
+    B. Updates to calculated columns in views are prohibited.
+    C. Privileges are required in order to update data using views.
+    D. If a view omits a mandatory column, inserts to the view are not possible.
+    E. Any update involving a view may reference columns only from one table.
+    Answer: B,C,D,E
+33. Some advantages of views are
+    A. Views may provide performance advantages.
+    B. Views may insulate database users from table and column name changes.
+    C. Views may be used to hide joins and complex calculations.
+    D. Views may filter columns or rows that users should not see.
+    E. Views may be tailored to the needs of individual departments.
+    Answer: A,B,C,D,E
+34. Indexes
+    A. May be used to assist with primary key constraints
+    B. May be used to improve query performance
+    C. May be used to improve insert, update, and delete performance
+    D. Are usually smaller than the tables they reference
+    E. Are slower to sequentially scan than corresponding tables
+    Answer: A,B,D
+35. General rules to follow regarding indexes include which of the following?
+    A. The larger the table, the more important indexes become.
+    B. Indexing foreign key columns often helps join performance.
+    C. Columns that are frequently updated should always be indexed.
+    D. The more a table is updated, the more indexes will help performance.
+    E. Indexes on very small tables tend not to be very useful.
+    Answers: A,B,E
